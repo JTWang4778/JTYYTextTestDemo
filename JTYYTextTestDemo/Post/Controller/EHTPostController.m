@@ -168,15 +168,19 @@
              YYTextAttachment = "<YYTextAttachment: 0x600002c7a080>";
          }
      
+     
+     
      */
+    NSMutableString *resultString = [NSMutableString string];
+    NSInteger lastIndex = 0;
+    
     NSAttributedString *attributString = self.textView.attributedText;
     [attributString enumerateAttributesInRange:attributString.yy_rangeOfAll options:NSAttributedStringEnumerationLongestEffectiveRangeNotRequired usingBlock:^(NSDictionary<NSAttributedStringKey,id> * _Nonnull attrs, NSRange range, BOOL * _Nonnull stop) {
-        NSString *tip;
         if (attrs[@"YYTextAttachment"] == nil) {
-            tip = @"普通文本";
-            NSLog(@"%@   \n\n",tip);
+            NSString *subStr = [attributString.string substringWithRange:range];
+            NSLog(@"普通文本 --->  %@  %@ \n\n",NSStringFromRange(range),subStr);
         }else{
-            tip = @"有附件";
+            // 遍历到附件的时候，记录位置，然后根据之前记录的位置，获取期间正常字符串和转化后的字符串拼接起来
             YYTextAttachment *attachment = attrs[@"YYTextAttachment"];
             YYTextBackedString *str = attrs[@"YYTextBackedString"];
             id content = attachment.content;
@@ -255,7 +259,7 @@
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
     style.lineBreakMode = NSLineBreakByCharWrapping;
     style.lineSpacing = 6;
-    text.typingAttributes = @{NSForegroundColorAttributeName : [UIColor redColor], NSFontAttributeName : UIFontMake(15), NSParagraphStyleAttributeName : style};
+    text.typingAttributes = @{NSForegroundColorAttributeName : [UIColor jt_colorWithHexString:@"404145"], NSFontAttributeName : UIFontMake(15), NSParagraphStyleAttributeName : style};
     text.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
 //    text.linePositionModifier = mod;
 //    text.text = @"[微笑][微笑][微笑][微笑]";
@@ -387,13 +391,13 @@
 // 插入超链接
 - (void)insertHyperlinks{
     [CommunityPublishInpugHyperlinksView loadingMaskTitle:@"插入超链接" callBack:^(CommunityPublishInpugHyperlinksView * _Nonnull hyperView) {
-        NSLog(@"%@",hyperView.hyperlinks.text);
-        NSLog(@"%@",hyperView.hyperlinksTitle.text);
         NSString *address = hyperView.hyperlinks.text;
         NSString *title = hyperView.hyperlinksTitle.text;
-        title = @"超链接";
-        address = @"http://www.baidu.com";
-        if ([address length] == 0) {
+        address = [NSString removeSpaceAndNewline:address];
+        address = address.lowercaseString;
+        // 检查网址是否正确
+        if ([address length] == 0 || ![NSString isUrlAddress:address]) {
+            NSLog(@"请输入正确的网址");
             return ;
         }
         
