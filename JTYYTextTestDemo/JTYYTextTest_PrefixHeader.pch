@@ -1,0 +1,26 @@
+//
+//  JTYYTextTest_PrefixHeader.pch
+//  JTYYTextTestDemo
+//
+//  Created by wangjintao on 2019/4/5.
+//  Copyright © 2019年 wangjintao. All rights reserved.
+//
+
+#ifndef JTYYTextTest_PrefixHeader_pch
+#define JTYYTextTest_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "JTCommonDefine.h"
+#import "UIView+JT.h"
+#import "UIColor+JT.h"
+#import "UIImage+JT.h"
+#import "NSString+JT.h"
+#import <MJRefresh/MJRefresh.h>
+#import <Masonry/Masonry.h>
+#import <AFNetworking.h>
+#import <MBProgressHUD.h>
+#import <SDWebImage/SDWebImage.h>
+#import "JTBaseViewController.h"
+
+#endif /* JTYYTextTest_PrefixHeader_pch */
