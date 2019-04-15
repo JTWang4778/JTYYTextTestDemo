@@ -12,10 +12,4 @@ NSString * const JTTutuGifKeyboardActionNotification = @"JTTutuGifKeyboardAction
 
 @implementation JTEmojiModel
 
-
-- (void)dealloc
-{
-    NSLog(@"asdf");
-}
-
 @end

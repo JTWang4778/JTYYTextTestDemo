@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+UIKIT_EXTERN NSString * const EHTPostSuccessNotificationName;
+
 @interface EHTPostController : JTBaseViewController
 
 @end

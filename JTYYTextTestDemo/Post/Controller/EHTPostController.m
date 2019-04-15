@@ -16,7 +16,9 @@
 #import "JTHyberLinkLabel.h"
 #import "CommunityPublishInpugHyperlinksView.h"
 
-@interface EHTPostController ()<EHTPostToolViewDelegate, YYTextViewDelegate>
+NSString * const EHTPostSuccessNotificationName = @"EHTPostSuccessNotificationName";
+
+@interface EHTPostController ()<EHTPostToolViewDelegate, YYTextViewDelegate, UITextFieldDelegate>
 {
     CGFloat ToolBarHeight;
     CGFloat EmojiKeyboardHeight;
@@ -171,6 +173,17 @@
      
      
      */
+    
+    if (self.textField.text == nil || [self.textField.text length] == 0) {
+        NSLog(@"请输入标题");
+        return;
+    }
+    
+    if (self.textView.text == nil || [self.textView.text length] == 0) {
+        NSLog(@"请输入内容");
+        return;
+    }
+    
     NSMutableString *resultString = [NSMutableString string];
     NSInteger lastIndex = 0;
     
@@ -178,7 +191,8 @@
     [attributString enumerateAttributesInRange:attributString.yy_rangeOfAll options:NSAttributedStringEnumerationLongestEffectiveRangeNotRequired usingBlock:^(NSDictionary<NSAttributedStringKey,id> * _Nonnull attrs, NSRange range, BOOL * _Nonnull stop) {
         if (attrs[@"YYTextAttachment"] == nil) {
             NSString *subStr = [attributString.string substringWithRange:range];
-            NSLog(@"普通文本 --->  %@  %@ \n\n",NSStringFromRange(range),subStr);
+            [resultString appendString:subStr];
+//            NSLog(@"普通文本 --->  %@  %@ \n\n",NSStringFromRange(range),subStr);
         }else{
             // 遍历到附件的时候，记录位置，然后根据之前记录的位置，获取期间正常字符串和转化后的字符串拼接起来
             YYTextAttachment *attachment = attrs[@"YYTextAttachment"];
@@ -186,21 +200,33 @@
             id content = attachment.content;
             if ([content isMemberOfClass:[UIImage class]]) {
                 // emoji
-                NSLog(@"emoji %@",str.string);
+//                NSLog(@"emoji %@",str.string);
+                [resultString appendString:str.string];
             }else if ([content isMemberOfClass:[UIImageView class]]) {
                 // 图片
-                NSLog(@"图片 %@",str.string);
+
+                NSString *imgLabel = [NSString stringWithFormat:@"<img src=\"%@\" />",str.string];
+//                NSLog(@"图片 %@",str.string);
+                [resultString appendString:imgLabel];
             }else if ([content isMemberOfClass:[YYAnimatedImageView class]]){
                 // gif
-                NSLog(@"gif %@",str.string);
+//                NSLog(@"gif %@",str.string);
+                [resultString appendString:str.string];
             }else if ([content isMemberOfClass:[JTHyberLinkLabel class]]){
                 // a link
-                NSLog(@"alink %@",str.string);
+                JTHyberLinkLabel *linkLabel = (JTHyberLinkLabel *)content;
+                
+                NSString *aLabel = [NSString stringWithFormat:@"<a href=\"%@\">%@</a>",str.string,linkLabel.text];
+                [resultString appendString:aLabel];
             }
 
         }
-        NSLog(@"%@   ",NSStringFromRange(range));
     }];
+    
+    NSDictionary *param = @{@"title":self.textField.text, @"htmlStr": resultString, @"attributeString" : self.textView.attributedText};
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:EHTPostSuccessNotificationName object:nil userInfo:param];
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 - (void)addObserver{
@@ -229,7 +255,7 @@
     textField.borderStyle = UITextBorderStyleNone;
     textField.font = UIFontMake(15);
     textField.textColor = [UIColor jt_colorWithHexString:@"404145"];
-//    textField.delegate = self;
+    textField.delegate = self;
     NSAttributedString *place = [[NSAttributedString alloc] initWithString:@"请输入标题" attributes:@{ NSForegroundColorAttributeName : [UIColor jt_colorWithHexString:@"999CAA"], NSFontAttributeName :  UIFontMake(15)}];
     textField.attributedPlaceholder = place;
 //    textField.backgroundColor = [UIColor lightGrayColor];
