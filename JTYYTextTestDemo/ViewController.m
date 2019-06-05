@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EHTPostController.h"
+#import "ControllerA.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -32,6 +33,11 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"asdfasdf"];
     
     [self.view sendSubviewToBack:self.tableView];
+    
+}
+- (IBAction)didClickPushButton:(UIButton *)sender {
+    
+    [self.navigationController pushViewController:[ControllerA new] animated:YES];
     
 }
 

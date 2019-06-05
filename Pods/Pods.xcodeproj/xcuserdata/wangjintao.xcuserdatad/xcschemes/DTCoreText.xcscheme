@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4AACB373704EA070A08D161F219C5B53"
+               BuildableName = "DTCoreText.framework"
                BlueprintName = "DTCoreText"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "DTCoreText.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

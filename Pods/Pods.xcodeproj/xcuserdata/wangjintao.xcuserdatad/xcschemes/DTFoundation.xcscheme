@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BF942488445C536403490A0489404EA4"
+               BuildableName = "DTFoundation.framework"
                BlueprintName = "DTFoundation"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "DTFoundation.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

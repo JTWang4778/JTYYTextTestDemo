@@ -11,6 +11,9 @@
 		BB18239F2258B43E00B14B92 /* TutuEmoji.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB18239E2258B43E00B14B92 /* TutuEmoji.bundle */; };
 		BB1823A42258CEB200B14B92 /* JTTutuGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1823A32258CEB200B14B92 /* JTTutuGifView.m */; };
 		BB1C9B1D2259EAEB00540F9E /* NSObject+JT.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1C9B1C2259EAEB00540F9E /* NSObject+JT.m */; };
+		BB23295B22A7DF0C0085906A /* ControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = BB23295922A7DF0C0085906A /* ControllerA.m */; };
+		BB23295E22A7E0280085906A /* ControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = BB23295D22A7E0280085906A /* ControllerB.m */; };
+		BB23296122A7E0530085906A /* ControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = BB23296022A7E0530085906A /* ControllerC.m */; };
 		BB38AE3B2256E2EA00F519C3 /* JTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB38AE3A2256E2EA00F519C3 /* JTBaseModel.m */; };
 		BB38AE412256E38700F519C3 /* JTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB38AE402256E38700F519C3 /* JTBaseViewController.m */; };
 		BB38AE472256E9E000F519C3 /* UIView+JT.m in Sources */ = {isa = PBXBuildFile; fileRef = BB38AE462256E9E000F519C3 /* UIView+JT.m */; };
@@ -100,6 +103,12 @@
 		BB1823A32258CEB200B14B92 /* JTTutuGifView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTTutuGifView.m; sourceTree = "<group>"; };
 		BB1C9B1B2259EAEB00540F9E /* NSObject+JT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JT.h"; sourceTree = "<group>"; };
 		BB1C9B1C2259EAEB00540F9E /* NSObject+JT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JT.m"; sourceTree = "<group>"; };
+		BB23295922A7DF0C0085906A /* ControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerA.m; sourceTree = "<group>"; };
+		BB23295A22A7DF0C0085906A /* ControllerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerA.h; sourceTree = "<group>"; };
+		BB23295C22A7E0280085906A /* ControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControllerB.h; sourceTree = "<group>"; };
+		BB23295D22A7E0280085906A /* ControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerB.m; sourceTree = "<group>"; };
+		BB23295F22A7E0530085906A /* ControllerC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControllerC.h; sourceTree = "<group>"; };
+		BB23296022A7E0530085906A /* ControllerC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerC.m; sourceTree = "<group>"; };
 		BB38AE392256E2EA00F519C3 /* JTBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTBaseModel.h; sourceTree = "<group>"; };
 		BB38AE3A2256E2EA00F519C3 /* JTBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTBaseModel.m; sourceTree = "<group>"; };
 		BB38AE3F2256E38700F519C3 /* JTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTBaseViewController.h; sourceTree = "<group>"; };
@@ -278,6 +287,19 @@
 				3CCE79566B8263A9C4A7126F /* Pods-JTYYTextTestDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB23295822A7DE310085906A /* NavigationbarTest */ = {
+			isa = PBXGroup;
+			children = (
+				BB23295A22A7DF0C0085906A /* ControllerA.h */,
+				BB23295922A7DF0C0085906A /* ControllerA.m */,
+				BB23295C22A7E0280085906A /* ControllerB.h */,
+				BB23295D22A7E0280085906A /* ControllerB.m */,
+				BB23295F22A7E0530085906A /* ControllerC.h */,
+				BB23296022A7E0530085906A /* ControllerC.m */,
+			);
+			path = NavigationbarTest;
 			sourceTree = "<group>";
 		};
 		BB38AE352256E24500F519C3 /* Base */ = {
@@ -637,6 +659,7 @@
 		BBFD36B12256DFCE00CB04B7 /* JTYYTextTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BB23295822A7DE310085906A /* NavigationbarTest */,
 				BB38AE562257036000F519C3 /* Post */,
 				BB38AE542256FBA500F519C3 /* bundleTest.bundle */,
 				BB38AE382256E26800F519C3 /* ThirdPart */,
@@ -774,6 +797,7 @@
 				"${BUILT_PRODUCTS_DIR}/DTCoreText/DTCoreText.framework",
 				"${BUILT_PRODUCTS_DIR}/DTFoundation/DTFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
@@ -790,6 +814,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCoreText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
@@ -821,6 +846,7 @@
 				BB38AE6A22572E8400F519C3 /* JTEmojiView.m in Sources */,
 				BB38AE4D2256EAFF00F519C3 /* UIImage+JT.m in Sources */,
 				BB38AEE1225730A000F519C3 /* YYTextRubyAnnotation.m in Sources */,
+				BB23296122A7E0530085906A /* ControllerC.m in Sources */,
 				BB38AEEA225730A000F519C3 /* YYImageCache.m in Sources */,
 				BB38AECE225730A000F519C3 /* YYImage.m in Sources */,
 				BB38AEEB225730A000F519C3 /* YYDiskCache.m in Sources */,
@@ -848,6 +874,7 @@
 				BB38AEF1225730A000F519C3 /* UIButton+YYWebImage.m in Sources */,
 				BB606520225A027400022522 /* ZYNetworking.m in Sources */,
 				BB403D7E225A2DAD0018EEF6 /* CommunityPublishInpugHyperlinksView.m in Sources */,
+				BB23295B22A7DF0C0085906A /* ControllerA.m in Sources */,
 				BB38AEEC225730A000F519C3 /* YYCache.m in Sources */,
 				BB38AED4225730A000F519C3 /* YYTextContainerView.m in Sources */,
 				BB38AE6922572E8400F519C3 /* JTEmojiCell.m in Sources */,
@@ -867,6 +894,7 @@
 				BB38AF39225730E300F519C3 /* SGPageContentCollectionView.m in Sources */,
 				BB38AEE9225730A000F519C3 /* YYTextWeakProxy.m in Sources */,
 				BB38AECF225730A000F519C3 /* YYImageCoder.m in Sources */,
+				BB23295E22A7E0280085906A /* ControllerB.m in Sources */,
 				BB38AF3B225730E300F519C3 /* SGPageTitleViewConfigure.m in Sources */,
 				BB38AECC225730A000F519C3 /* YYSpriteSheetImage.m in Sources */,
 				BB38AEE7225730A000F519C3 /* UIView+YYText.m in Sources */,

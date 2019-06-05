@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.interactivePopGestureRecognizer.delegate = nil;
+//    self.interactivePopGestureRecognizer.delegate = nil;
     self.delegate = self;
     
     self.navigationBar.barTintColor = [UIColor whiteColor];
@@ -27,6 +27,8 @@
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 //    self.navigationBar.b/arTintColor = [UIColor hexColorWith:@"#4A88FB"];
     [self.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor hexColorWith:@"4A88FB"]] forBarMetrics:UIBarMetricsDefault];
+    
+    self.fd_fullscreenPopGestureRecognizer.enabled = YES;
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{

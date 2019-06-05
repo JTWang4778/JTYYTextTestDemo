@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56E3CD603D494DFF149452467882C294"
+               BuildableName = "JSONModel.framework"
                BlueprintName = "JSONModel"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "JSONModel.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

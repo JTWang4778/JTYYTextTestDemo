@@ -15,6 +15,7 @@ target 'JTYYTextTestDemo' do
   pod 'JSONModel', '~> 1.8.0'
   pod 'DZNEmptyDataSet', '~> 1.8.1'
   pod 'SDWebImage', '~> 5.0.0-beta5'
+  pod 'FDFullscreenPopGesture', '~> 1.1'
 
   # Pods for JTYYTextTestDemo
 
