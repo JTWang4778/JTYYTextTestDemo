@@ -84,6 +84,18 @@
 		BB6A3D282257585D00FC53C6 /* JTEmojiPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6A3D272257585D00FC53C6 /* JTEmojiPageCell.m */; };
 		BB923114225746C0002A68EE /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB923113225746C0002A68EE /* EmoticonQQ.bundle */; };
 		BB92311722574A64002A68EE /* JTEmojiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB92311622574A64002A68EE /* JTEmojiModel.m */; };
+		BB99523B22A8FF41008B2886 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99523A22A8FF41008B2886 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		BB99525422A90151008B2886 /* UINavigationController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99523D22A90151008B2886 /* UINavigationController+MemoryLeak.m */; };
+		BB99525522A90151008B2886 /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524122A90151008B2886 /* MLeakedObjectProxy.m */; };
+		BB99525622A90151008B2886 /* UIView+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524322A90151008B2886 /* UIView+MemoryLeak.m */; };
+		BB99525722A90151008B2886 /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524622A90151008B2886 /* UITouch+MemoryLeak.m */; };
+		BB99525822A90151008B2886 /* UISplitViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524722A90151008B2886 /* UISplitViewController+MemoryLeak.m */; };
+		BB99525922A90151008B2886 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524922A90151008B2886 /* UIPageViewController+MemoryLeak.m */; };
+		BB99525A22A90151008B2886 /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524B22A90151008B2886 /* UITabBarController+MemoryLeak.m */; };
+		BB99525B22A90151008B2886 /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524C22A90151008B2886 /* MLeaksMessenger.m */; };
+		BB99525C22A90151008B2886 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99524E22A90151008B2886 /* UIViewController+MemoryLeak.m */; };
+		BB99525D22A90151008B2886 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99525122A90151008B2886 /* UIApplication+MemoryLeak.m */; };
+		BB99525E22A90151008B2886 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99525222A90151008B2886 /* NSObject+MemoryLeak.m */; };
 		BBC0109822A8B69200A53806 /* ControllerD.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC0109722A8B69200A53806 /* ControllerD.m */; };
 		BBCE4AB7225BA98F0054B3F3 /* JTHyberLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCE4AB6225BA98F0054B3F3 /* JTHyberLinkLabel.m */; };
 		BBF3A1902258D02F00369A93 /* JTTutuGifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF3A18F2258D02F00369A93 /* JTTutuGifCell.m */; };
@@ -253,6 +265,31 @@
 		BB923113225746C0002A68EE /* EmoticonQQ.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonQQ.bundle; sourceTree = "<group>"; };
 		BB92311522574A64002A68EE /* JTEmojiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTEmojiModel.h; sourceTree = "<group>"; };
 		BB92311622574A64002A68EE /* JTEmojiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTEmojiModel.m; sourceTree = "<group>"; };
+		BB99523922A8FF41008B2886 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		BB99523A22A8FF41008B2886 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		BB99523D22A90151008B2886 /* UINavigationController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99523E22A90151008B2886 /* MLeaksMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksMessenger.h; sourceTree = "<group>"; };
+		BB99523F22A90151008B2886 /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99524022A90151008B2886 /* UIPageViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99524122A90151008B2886 /* MLeakedObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeakedObjectProxy.m; sourceTree = "<group>"; };
+		BB99524222A90151008B2886 /* UIViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99524322A90151008B2886 /* UIView+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99524422A90151008B2886 /* NSObject+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99524522A90151008B2886 /* UIApplication+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99524622A90151008B2886 /* UITouch+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99524722A90151008B2886 /* UISplitViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99524822A90151008B2886 /* MLeaksFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeaksFinder.h; sourceTree = "<group>"; };
+		BB99524922A90151008B2886 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99524A22A90151008B2886 /* MLeakedObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLeakedObjectProxy.h; sourceTree = "<group>"; };
+		BB99524B22A90151008B2886 /* UITabBarController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99524C22A90151008B2886 /* MLeaksMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLeaksMessenger.m; sourceTree = "<group>"; };
+		BB99524D22A90151008B2886 /* UINavigationController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99524E22A90151008B2886 /* UIViewController+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99524F22A90151008B2886 /* UISplitViewController+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99525022A90151008B2886 /* UITouch+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+MemoryLeak.h"; sourceTree = "<group>"; };
+		BB99525122A90151008B2886 /* UIApplication+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99525222A90151008B2886 /* NSObject+MemoryLeak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MemoryLeak.m"; sourceTree = "<group>"; };
+		BB99525322A90151008B2886 /* UIView+MemoryLeak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MemoryLeak.h"; sourceTree = "<group>"; };
 		BBC0109622A8B69200A53806 /* ControllerD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControllerD.h; sourceTree = "<group>"; };
 		BBC0109722A8B69200A53806 /* ControllerD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerD.m; sourceTree = "<group>"; };
 		BBCE4AB5225BA98F0054B3F3 /* JTHyberLinkLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTHyberLinkLabel.h; sourceTree = "<group>"; };
@@ -351,6 +388,8 @@
 		BB38AE382256E26800F519C3 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				BB99523C22A90151008B2886 /* MLeaksFinder */,
+				BB99523822A8FF41008B2886 /* FDFullscreenPopGesture */,
 				BB38AF22225730E300F519C3 /* SGPagingView */,
 				BB38AE6C225730A000F519C3 /* YYKit */,
 			);
@@ -643,6 +682,45 @@
 			path = ZYNetwork;
 			sourceTree = "<group>";
 		};
+		BB99523822A8FF41008B2886 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				BB99523922A8FF41008B2886 /* UINavigationController+FDFullscreenPopGesture.h */,
+				BB99523A22A8FF41008B2886 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		BB99523C22A90151008B2886 /* MLeaksFinder */ = {
+			isa = PBXGroup;
+			children = (
+				BB99523D22A90151008B2886 /* UINavigationController+MemoryLeak.m */,
+				BB99523E22A90151008B2886 /* MLeaksMessenger.h */,
+				BB99523F22A90151008B2886 /* UITabBarController+MemoryLeak.h */,
+				BB99524022A90151008B2886 /* UIPageViewController+MemoryLeak.h */,
+				BB99524122A90151008B2886 /* MLeakedObjectProxy.m */,
+				BB99524222A90151008B2886 /* UIViewController+MemoryLeak.h */,
+				BB99524322A90151008B2886 /* UIView+MemoryLeak.m */,
+				BB99524422A90151008B2886 /* NSObject+MemoryLeak.h */,
+				BB99524522A90151008B2886 /* UIApplication+MemoryLeak.h */,
+				BB99524622A90151008B2886 /* UITouch+MemoryLeak.m */,
+				BB99524722A90151008B2886 /* UISplitViewController+MemoryLeak.m */,
+				BB99524822A90151008B2886 /* MLeaksFinder.h */,
+				BB99524922A90151008B2886 /* UIPageViewController+MemoryLeak.m */,
+				BB99524A22A90151008B2886 /* MLeakedObjectProxy.h */,
+				BB99524B22A90151008B2886 /* UITabBarController+MemoryLeak.m */,
+				BB99524C22A90151008B2886 /* MLeaksMessenger.m */,
+				BB99524D22A90151008B2886 /* UINavigationController+MemoryLeak.h */,
+				BB99524E22A90151008B2886 /* UIViewController+MemoryLeak.m */,
+				BB99524F22A90151008B2886 /* UISplitViewController+MemoryLeak.h */,
+				BB99525022A90151008B2886 /* UITouch+MemoryLeak.h */,
+				BB99525122A90151008B2886 /* UIApplication+MemoryLeak.m */,
+				BB99525222A90151008B2886 /* NSObject+MemoryLeak.m */,
+				BB99525322A90151008B2886 /* UIView+MemoryLeak.h */,
+			);
+			path = MLeaksFinder;
+			sourceTree = "<group>";
+		};
 		BBFD36A62256DFCE00CB04B7 = {
 			isa = PBXGroup;
 			children = (
@@ -802,7 +880,6 @@
 				"${BUILT_PRODUCTS_DIR}/DTCoreText/DTCoreText.framework",
 				"${BUILT_PRODUCTS_DIR}/DTFoundation/DTFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
@@ -819,7 +896,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCoreText.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
@@ -843,19 +919,24 @@
 				BB38AF3A225730E300F519C3 /* SGPageTitleView.m in Sources */,
 				BBFD36B72256DFCE00CB04B7 /* ViewController.m in Sources */,
 				BB38AEDD225730A000F519C3 /* YYTextRunDelegate.m in Sources */,
+				BB99525522A90151008B2886 /* MLeakedObjectProxy.m in Sources */,
 				BB38AED0225730A000F519C3 /* YYFrameImage.m in Sources */,
 				BB38AE6722572E8400F519C3 /* EHTPostController.m in Sources */,
 				BB38AED3225730A000F519C3 /* YYTextMagnifier.m in Sources */,
 				BB38AED5225730A000F519C3 /* YYTextEffectWindow.m in Sources */,
+				BB99523B22A8FF41008B2886 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				BB1823A42258CEB200B14B92 /* JTTutuGifView.m in Sources */,
 				BB38AE6A22572E8400F519C3 /* JTEmojiView.m in Sources */,
 				BB38AE4D2256EAFF00F519C3 /* UIImage+JT.m in Sources */,
 				BB38AEE1225730A000F519C3 /* YYTextRubyAnnotation.m in Sources */,
 				BB23296122A7E0530085906A /* ControllerC.m in Sources */,
+				BB99525C22A90151008B2886 /* UIViewController+MemoryLeak.m in Sources */,
+				BB99525722A90151008B2886 /* UITouch+MemoryLeak.m in Sources */,
 				BB38AEEA225730A000F519C3 /* YYImageCache.m in Sources */,
 				BB38AECE225730A000F519C3 /* YYImage.m in Sources */,
 				BB38AEEB225730A000F519C3 /* YYDiskCache.m in Sources */,
 				BB38AEF2225730A000F519C3 /* UIImageView+YYWebImage.m in Sources */,
+				BB99525A22A90151008B2886 /* UITabBarController+MemoryLeak.m in Sources */,
 				BB38AEEE225730A000F519C3 /* YYMemoryCache.m in Sources */,
 				BB38AEE0225730A000F519C3 /* YYTextArchiver.m in Sources */,
 				BB38AED9225730A000F519C3 /* YYTextSelectionView.m in Sources */,
@@ -894,16 +975,21 @@
 				BB38AE3B2256E2EA00F519C3 /* JTBaseModel.m in Sources */,
 				BBCE4AB7225BA98F0054B3F3 /* JTHyberLinkLabel.m in Sources */,
 				BB38AE472256E9E000F519C3 /* UIView+JT.m in Sources */,
+				BB99525B22A90151008B2886 /* MLeaksMessenger.m in Sources */,
 				BB38AEDC225730A000F519C3 /* YYLabel.m in Sources */,
+				BB99525922A90151008B2886 /* UIPageViewController+MemoryLeak.m in Sources */,
 				BB38AED7225730A000F519C3 /* YYTextLayout.m in Sources */,
 				BB38AEE5225730A000F519C3 /* UIPasteboard+YYText.m in Sources */,
 				BB38AF39225730E300F519C3 /* SGPageContentCollectionView.m in Sources */,
 				BB38AEE9225730A000F519C3 /* YYTextWeakProxy.m in Sources */,
 				BB38AECF225730A000F519C3 /* YYImageCoder.m in Sources */,
+				BB99525822A90151008B2886 /* UISplitViewController+MemoryLeak.m in Sources */,
 				BB23295E22A7E0280085906A /* ControllerB.m in Sources */,
 				BB38AF3B225730E300F519C3 /* SGPageTitleViewConfigure.m in Sources */,
+				BB99525622A90151008B2886 /* UIView+MemoryLeak.m in Sources */,
 				BB38AECC225730A000F519C3 /* YYSpriteSheetImage.m in Sources */,
 				BB38AEE7225730A000F519C3 /* UIView+YYText.m in Sources */,
+				BB99525E22A90151008B2886 /* NSObject+MemoryLeak.m in Sources */,
 				BB38AF37225730E300F519C3 /* UIView+SGPagingView.m in Sources */,
 				BB38AE6B22572E8400F519C3 /* EHTPostToolView.m in Sources */,
 				BB38AEE3225730A000F519C3 /* NSParagraphStyle+YYText.m in Sources */,
@@ -912,9 +998,11 @@
 				BB38AED2225730A000F519C3 /* YYTextView.m in Sources */,
 				BBFD36B42256DFCE00CB04B7 /* AppDelegate.m in Sources */,
 				BB1C9B1D2259EAEB00540F9E /* NSObject+JT.m in Sources */,
+				BB99525422A90151008B2886 /* UINavigationController+MemoryLeak.m in Sources */,
 				BB4D9A7B22588BAA00C09D3D /* EHTSelectImageManager.m in Sources */,
 				BB38AF3C225730E300F519C3 /* SGPagingViewPopGestureVC.m in Sources */,
 				BB38AE6822572E8400F519C3 /* JTEmojiKeyboardView.m in Sources */,
+				BB99525D22A90151008B2886 /* UIApplication+MemoryLeak.m in Sources */,
 				BBF3A1902258D02F00369A93 /* JTTutuGifCell.m in Sources */,
 				BB38AF36225730E300F519C3 /* UIButton+SGPagingView.m in Sources */,
 				BB38AED6225730A000F519C3 /* YYTextInput.m in Sources */,

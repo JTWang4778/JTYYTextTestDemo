@@ -22,6 +22,8 @@
 #import <MBProgressHUD.h>
 #import <SDWebImage/SDWebImage.h>
 #import "JTBaseViewController.h"
-#import <FDFullscreenPopGesture/FDFullscreenPopGesture-umbrella.h>
+//#import <FDFullscreenPopGesture/FDFullscreenPopGesture-umbrella.h>
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "MLeaksFinder.h"
 
 #endif /* JTYYTextTest_PrefixHeader_pch */

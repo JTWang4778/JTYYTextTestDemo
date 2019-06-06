@@ -29,6 +29,16 @@
     testButton.backgroundColor = [UIColor randomColor];
     [testButton addTarget:self action:@selector(didClickTestButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:testButton];
+    
+    
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(receivedPand:)];
+    [self.view addGestureRecognizer:pan];
+}
+
+- (void)receivedPand:(UIPanGestureRecognizer *)ges{
+    CGPoint asdf = [ges translationInView:self.view];
+    JTLog(@"----->%@",NSStringFromCGPoint(asdf));
 }
 
 - (void)viewWillAppear:(BOOL)animated{

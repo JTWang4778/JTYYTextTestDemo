@@ -10,7 +10,11 @@
 #import "ControllerB.h"
 #import "ControllerC.h"
 
+typedef void (^CallBlock)(UIViewController *);
+
 @interface ControllerB ()
+
+@property (nonatomic, copy)CallBlock block;
 
 @end
 
@@ -24,11 +28,16 @@
     // 是否禁用全屏手势手势手势
 //    self.fd_interactivePopDisabled = YES;
     self.fd_prefersNavigationBarHidden = YES;
+    self.fd_interactivePopMaxAllowedInitialDistanceToLeftEdge = 100;
     
     UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     testButton.backgroundColor = [UIColor randomColor];
     [testButton addTarget:self action:@selector(didClickTestButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:testButton];
+    
+    self.block = ^(UIViewController *asdf) {
+        self.view = [UIColor orangeColor];
+    };
 }
 
 - (void)didClickTestButton:(UIButton *)sender{
