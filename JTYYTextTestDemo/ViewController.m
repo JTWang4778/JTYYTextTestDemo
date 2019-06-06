@@ -23,7 +23,21 @@
     [super viewDidLoad];
     self.dataArr = [NSMutableArray array];
     [self addObserver];
+    
+//    [self.navigationController setNavigationBarHidden:YES animated:NO];
+//    self.navigationController.na.vigationBar.hidden= YES;
+//    self.fd_prefersNavigationBarHidden = YES;
 }
+
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES animated:animated];
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated{
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO animated:animated];
+//}
 - (void)setupSubviews{
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:tableView];
@@ -38,7 +52,6 @@
 - (IBAction)didClickPushButton:(UIButton *)sender {
     
     [self.navigationController pushViewController:[ControllerA new] animated:YES];
-    
 }
 
 - (void)addObserver{

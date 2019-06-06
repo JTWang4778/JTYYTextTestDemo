@@ -84,6 +84,7 @@
 		BB6A3D282257585D00FC53C6 /* JTEmojiPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6A3D272257585D00FC53C6 /* JTEmojiPageCell.m */; };
 		BB923114225746C0002A68EE /* EmoticonQQ.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB923113225746C0002A68EE /* EmoticonQQ.bundle */; };
 		BB92311722574A64002A68EE /* JTEmojiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB92311622574A64002A68EE /* JTEmojiModel.m */; };
+		BBC0109822A8B69200A53806 /* ControllerD.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC0109722A8B69200A53806 /* ControllerD.m */; };
 		BBCE4AB7225BA98F0054B3F3 /* JTHyberLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCE4AB6225BA98F0054B3F3 /* JTHyberLinkLabel.m */; };
 		BBF3A1902258D02F00369A93 /* JTTutuGifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF3A18F2258D02F00369A93 /* JTTutuGifCell.m */; };
 		BBFD36B42256DFCE00CB04B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFD36B32256DFCE00CB04B7 /* AppDelegate.m */; };
@@ -252,6 +253,8 @@
 		BB923113225746C0002A68EE /* EmoticonQQ.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EmoticonQQ.bundle; sourceTree = "<group>"; };
 		BB92311522574A64002A68EE /* JTEmojiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTEmojiModel.h; sourceTree = "<group>"; };
 		BB92311622574A64002A68EE /* JTEmojiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTEmojiModel.m; sourceTree = "<group>"; };
+		BBC0109622A8B69200A53806 /* ControllerD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControllerD.h; sourceTree = "<group>"; };
+		BBC0109722A8B69200A53806 /* ControllerD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ControllerD.m; sourceTree = "<group>"; };
 		BBCE4AB5225BA98F0054B3F3 /* JTHyberLinkLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTHyberLinkLabel.h; sourceTree = "<group>"; };
 		BBCE4AB6225BA98F0054B3F3 /* JTHyberLinkLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTHyberLinkLabel.m; sourceTree = "<group>"; };
 		BBF3A18E2258D02F00369A93 /* JTTutuGifCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTTutuGifCell.h; sourceTree = "<group>"; };
@@ -298,6 +301,8 @@
 				BB23295D22A7E0280085906A /* ControllerB.m */,
 				BB23295F22A7E0530085906A /* ControllerC.h */,
 				BB23296022A7E0530085906A /* ControllerC.m */,
+				BBC0109622A8B69200A53806 /* ControllerD.h */,
+				BBC0109722A8B69200A53806 /* ControllerD.m */,
 			);
 			path = NavigationbarTest;
 			sourceTree = "<group>";
@@ -879,6 +884,7 @@
 				BB38AED4225730A000F519C3 /* YYTextContainerView.m in Sources */,
 				BB38AE6922572E8400F519C3 /* JTEmojiCell.m in Sources */,
 				BB38AEEF225730A000F519C3 /* YYWebImageManager.m in Sources */,
+				BBC0109822A8B69200A53806 /* ControllerD.m in Sources */,
 				BB38AEED225730A000F519C3 /* YYKVStorage.m in Sources */,
 				BB38AEE2225730A000F519C3 /* YYTextUtilities.m in Sources */,
 				BB92311722574A64002A68EE /* JTEmojiModel.m in Sources */,

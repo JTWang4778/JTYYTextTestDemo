@@ -7,6 +7,7 @@
 //
 
 #import "ControllerC.h"
+#import "ControllerD.h"
 
 @interface ControllerC ()
 
@@ -21,19 +22,30 @@
     
     self.title = @"C";
     self.view.backgroundColor = [UIColor randomColor];
-    self.fd_prefersNavigationBarHidden = YES;
+//    self.fd_prefersNavigationBarHidden = YES;
+    
+    
+    UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    testButton.backgroundColor = [UIColor randomColor];
+    [testButton addTarget:self action:@selector(didClickTestButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:testButton];
 }
 
-//- (void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//    [self.navigationController setNavigationBarHidden:YES animated:animated];
-//}
-//
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
 //- (void)viewWillDisappear:(BOOL)animated{
 //    [super viewWillDisappear:animated];
 //    [self.navigationController setNavigationBarHidden:NO animated:animated];
-//    
+//
 //}
+
+- (void)didClickTestButton:(UIButton *)sender{
+    
+    [self.navigationController pushViewController:[ControllerD new] animated:YES];
+}
 /*
 #pragma mark - Navigation
 

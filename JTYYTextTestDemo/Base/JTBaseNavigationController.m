@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
 //    self.interactivePopGestureRecognizer.delegate = nil;
-    self.delegate = self;
+//    self.delegate = self;
     
     self.navigationBar.barTintColor = [UIColor whiteColor];
     self.navigationBar.translucent = NO;
@@ -28,7 +28,11 @@
 //    self.navigationBar.b/arTintColor = [UIColor hexColorWith:@"#4A88FB"];
     [self.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor hexColorWith:@"4A88FB"]] forBarMetrics:UIBarMetricsDefault];
     
+    //   是否开启全屏手势
     self.fd_fullscreenPopGestureRecognizer.enabled = YES;
+    
+    // 是否允许控制器自定义导航栏样式 如果设置为NO的话。控制器设置的是否显现导航栏的就会失效
+    self.fd_viewControllerBasedNavigationBarAppearanceEnabled = YES;
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
